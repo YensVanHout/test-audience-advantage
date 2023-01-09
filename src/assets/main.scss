@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+$light: #f3f5f7;
+$darker: #0c1821;
+$dark: #2a3e50;
+
+$font-stack: 'Raleway', Helvetica, Arial, sans-serif;
+
+body {
+  background-color: $light;
+
+  header{
+    .header-bg {
+      background-color: $dark;
+    }
+  }
+  
+  main{
+    .select-item-container{
+      min-height: 62vh;
+    }
+    p{
+      font-family: $font-stack;
+    }
+    
+    .selected-image{
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+  }
+  
+  .caroussel-item{
+    padding: 1px;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    color: $darker;
+  }
+}
+
